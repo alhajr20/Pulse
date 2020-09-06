@@ -5,7 +5,7 @@
         width: 750px;
         margin: 0 auto;
     }
-    .slick-prev, .slick-next {
+    .prev, .next {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -17,9 +17,34 @@
             height: 50px;
         }
     }
-
-    .slick-next {
+    .next {
         right: -66px;
         left: auto;
+    }
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .tns-nav {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        button {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            border: 1px solid red;
+            margin-right: 10px;
+            background-color: white;
+            outline: none;
+        }
+        .tns-nav-active {
+            background-color: red;
+        }
     }
 }
